@@ -83,4 +83,4 @@ If this is changed to restricted access, the embedded form will show an error in
 - **Lujain Ahmed Mourad** — Tester & Pitch Designer
 - **Mentor:** Ms. May Taha
 
-Al Dhafra, Abu Dhabi · Built for the Sandooq Al Watan Agentic AI Summer Program 2026 · Proudly part of the UAE's Year of Family.
+ADNOC Schools MZ - Al Dhafra, Abu Dhabi · Built for the Sandooq Al Watan Agentic AI Summer Program 2026 · Proudly part of the UAE's Year of Family.
