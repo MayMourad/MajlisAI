@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Majlis AI — Strengthening UAE Families Through Intelligent Coordination</title>
+<meta name="description" content="Majlis AI is a bilingual family coordination agent built for the Sandooq Al Watan Agentic AI Summer Program 2026, celebrating the UAE's Year of Family.">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Fonts: Inter for English, Noto Kufi Arabic / Cairo for Arabic -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Decorative background layers -->
+<div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV ===== -->
+<header class="site-nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-orb" aria-hidden="true"></span>
+      <span class="brand-name">Majlis AI</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#problem" data-i18n="nav.problem">The Problem</a>
+      <a href="#solution" data-i18n="nav.solution">Our Solution</a>
+      <a href="#how-it-works" data-i18n="nav.how">How It Works</a>
+      <a href="#live-demo" data-i18n="nav.demo">Live Demo</a>
+      <a href="#learned" data-i18n="nav.learned">What We Learned</a>
+      <a href="#year-of-family" data-i18n="nav.yof">Year of Family</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+        <span class="lang-en">EN</span> <span class="lang-sep">|</span> <span class="lang-ar">العربية</span>
+      </button>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy" data-animate="fade-up">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Sandooq Al Watan · Agentic AI Summer Program 2026 · Year of Family</p>
+        <h1 class="hero-title">Majlis <span class="accent-gold">AI</span></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Strengthening UAE Families Through Intelligent Coordination</p>
+        <p class="hero-pitch" data-i18n="pitch.text">Our agent helps UAE families plan gatherings and visits by turning an Arabic or English request into a clear action plan with assigned tasks, translated instructions, timing alerts, and a meaningful family-connection prompt.</p>
+        <a href="#live-demo" class="btn btn-primary" data-i18n="hero.cta">Try the Live Demo</a>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true" data-animate="fade-in">
+        <div class="orb-wrap">
+          <div class="orb-ring orb-ring--1"></div>
+          <div class="orb-ring orb-ring--2"></div>
+          <div class="orb-core"></div>
+          <svg class="orb-circuit" viewBox="0 0 300 300" fill="none">
+            <circle cx="150" cy="150" r="120" stroke="url(#circuitGrad)" stroke-width="1" stroke-dasharray="4 10"/>
+            <path d="M150 30 V70 M150 230 V270 M30 150 H70 M230 150 H270" stroke="url(#circuitGrad)" stroke-width="1.5"/>
+            <circle cx="150" cy="30" r="4" fill="#D4A24E"/>
+            <circle cx="150" cy="270" r="4" fill="#5B2A86"/>
+            <circle cx="30" cy="150" r="4" fill="#5B2A86"/>
+            <circle cx="270" cy="150" r="4" fill="#D4A24E"/>
+            <defs>
+              <linearGradient id="circuitGrad" x1="0" y1="0" x2="300" y2="300">
+                <stop offset="0%" stop-color="#D4A24E"/>
+                <stop offset="100%" stop-color="#5B2A86"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="orb-particles">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===== 2. THE PROBLEM ===== -->
+  <section class="section" id="problem">
+    <div class="section-inner">
+      <h2 class="lead-statement" data-animate="fade-up" data-i18n="problem.lead">Parents spend too much time managing family logistics and too little time creating meaningful moments together.</h2>
+
+      <div class="card-grid card-grid--3">
+        <article class="card" data-animate="fade-up" data-delay="0">
+          <div class="card-icon" aria-hidden="true">🌙</div>
+          <h3 data-i18n="problem.card1.title">The Thursday Evening Chaos</h3>
+          <p data-i18n="problem.card1.body">A mother in Al Dhafra is trying to organize Friday lunch at Grandma's house.</p>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="1">
+          <div class="card-icon" aria-hidden="true">🧩</div>
+          <h3 data-i18n="problem.card2.title">Overlapping Moving Parts</h3>
+          <p data-i18n="problem.card2.body">Dad is working late, the teenage son finishes football practice at 12:30 PM, the household driver needs translated directions, and Grandma doesn't use WhatsApp and needs a direct phone call.</p>
+        </article>
+        <article class="card" data-animate="fade-up" data-delay="2">
+          <div class="card-icon" aria-hidden="true">🗣️</div>
+          <h3 data-i18n="problem.card3.title">Cultural Friction</h3>
+          <p data-i18n="problem.card3.body">What should be a warm, unifying weekend tradition becomes an exhausting web of missed messages, constant coordination, and household stress.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. OUR SOLUTION ===== -->
+  <section class="section section--alt" id="solution">
+    <div class="section-inner">
+      <span class="pill pill--purple" data-animate="fade-up" data-i18n="solution.eyebrow">Our Solution</span>
+      <h2 class="section-statement" data-animate="fade-up" data-i18n="pitch.text">Our agent helps UAE families plan gatherings and visits by turning an Arabic or English request into a clear action plan with assigned tasks, translated instructions, timing alerts, and a meaningful family-connection prompt.</h2>
+
+      <blockquote class="callout" data-animate="fade-up">
+        <p class="callout-label" data-i18n="solution.testLabel">The Grandparent Test</p>
+        <p class="callout-quote" data-i18n="solution.testQuote">"If your grandmother could read the plan and immediately understand exactly what she needs to do — that's the Grandparent Test. Majlis AI writes for clarity first, technology second."</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== 4. HOW IT WORKS ===== -->
+  <section class="section" id="how-it-works">
+    <div class="section-inner">
+      <h2 class="section-title" data-animate="fade-up" data-i18n="how.title">How It Works</h2>
+      <p class="section-subtitle" data-animate="fade-up" data-i18n="how.subtitle">From a single family message to a complete, saved action plan — in under 15 seconds.</p>
+
+      <div class="pipeline" id="pipeline">
+        <div class="pipeline-step" data-animate="pipeline" data-delay="0">
+          <div class="pipeline-num">1</div>
+          <div class="pipeline-icon" aria-hidden="true">📝</div>
+          <h3 data-i18n="how.step1.title">Trigger</h3>
+          <p data-i18n="how.step1.body">A family member submits a coordination request through a simple Google Form — in Arabic or English.</p>
+        </div>
+        <div class="pipeline-arrow" aria-hidden="true"><span></span></div>
+
+        <div class="pipeline-step" data-animate="pipeline" data-delay="1">
+          <div class="pipeline-num">2</div>
+          <div class="pipeline-icon" aria-hidden="true">🧠</div>
+          <h3 data-i18n="how.step2.title">AI Processing</h3>
+          <p data-i18n="how.step2.body">Google Apps Script sends the request to the Gemini API, which reasons over it using the Majlis AI system instruction.</p>
+        </div>
+        <div class="pipeline-arrow" aria-hidden="true"><span></span></div>
+
+        <div class="pipeline-step" data-animate="pipeline" data-delay="2">
+          <div class="pipeline-num">3</div>
+          <div class="pipeline-icon" aria-hidden="true">📋</div>
+          <h3 data-i18n="how.step3.title">Output</h3>
+          <p data-i18n="how.step3.body">The agent generates an organized bilingual event summary, task distribution, translated helper notes, and a family conversation prompt.</p>
+        </div>
+        <div class="pipeline-arrow" aria-hidden="true"><span></span></div>
+
+        <div class="pipeline-step" data-animate="pipeline" data-delay="3">
+          <div class="pipeline-num">4</div>
+          <div class="pipeline-icon" aria-hidden="true">💾</div>
+          <h3 data-i18n="how.step4.title">Storage</h3>
+          <p data-i18n="how.step4.body">The complete plan logs automatically to the family Google Sheet in 10–13 seconds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. LIVE DEMO ===== -->
+  <section class="section section--alt" id="live-demo">
+    <div class="section-inner">
+      <span class="pill pill--gold" data-animate="fade-up" data-i18n="demo.eyebrow">The Functional Core</span>
+      <h2 class="section-title" data-animate="fade-up" data-i18n="demo.title">Live Demo</h2>
+
+      <div class="demo-strip" data-animate="fade-up">
+        <p data-i18n="demo.instructions">Submit a real family coordination request below. It's processed by our live Gemini-powered agent and instantly organized into a bilingual action plan. Responses currently land in the team's Google Sheet — this website doesn't read them back, but the form below is the live agent itself.</p>
+      </div>
+
+      <div class="sample-box" data-animate="fade-up">
+        <div class="sample-box-header">
+          <p class="sample-box-label" data-i18n="demo.sampleLabel">Try a sample input</p>
+          <button class="btn btn-ghost btn-small" id="copySampleBtn" type="button">
+            <span data-i18n="demo.copyBtn">Copy</span>
+          </button>
+        </div>
+        <p class="sample-box-text" id="sampleText" data-i18n="demo.sampleEn">Our family is planning a Friday lunch at my grandmother's house. My father will arrive after work, my younger brother finishes football at 12:30 PM, our driver needs directions, my grandmother prefers phone calls rather than messages, and we want to bring dessert. Please organize everything.</p>
+      </div>
+
+      <div class="iframe-card" data-animate="fade-up">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdhTALwwRsi0pER3K-JZw9VVA2m-CHKx0lLmz2XCJf755VU-Q/viewform?embedded=true"
+          width="100%"
+          loading="lazy"
+          title="Majlis AI family coordination request form">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. WHAT WE LEARNED ===== -->
+  <section class="section" id="learned">
+    <div class="section-inner">
+      <h2 class="section-title" data-animate="fade-up" data-i18n="learned.title">What We Learned</h2>
+
+      <div class="card-grid card-grid--3">
+        <article class="card card--broke" data-animate="fade-up" data-delay="0">
+          <div class="card-icon" aria-hidden="true">⚠️</div>
+          <h3 data-i18n="learned.card1.title">What Broke</h3>
+          <p data-i18n="learned.card1.body">Arabic inputs occasionally produced responses in English, and the model hallucinated unprovided details (such as inventing exact arrival times and specific directions).</p>
+        </article>
+        <article class="card card--fixed" data-animate="fade-up" data-delay="1">
+          <div class="card-icon" aria-hidden="true">🛠️</div>
+          <h3 data-i18n="learned.card2.title">How We Fixed It</h3>
+          <p data-i18n="learned.card2.body">Updated System Instruction v2 to strictly enforce 100% output language matching and explicitly list unprovided details under a "Conflicts or Missing Information" section rather than guessing.</p>
+        </article>
+        <article class="card card--next" data-animate="fade-up" data-delay="2">
+          <div class="card-icon" aria-hidden="true">🚀</div>
+          <h3 data-i18n="learned.card3.title">What We'd Do Next</h3>
+          <p data-i18n="learned.card3.body">Build direct WhatsApp API integration to send automated task assignments and driver directions directly to family members' phones.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. YEAR OF FAMILY ===== -->
+  <section class="section section--closing" id="year-of-family">
+    <div class="section-inner">
+      <h2 class="section-title" data-animate="fade-up" data-i18n="yof.title">Year of Family 2026</h2>
+
+      <div class="pill-row" data-animate="fade-up">
+        <span class="pill pill--outline" data-i18n="yof.roots">Roots — Heritage &amp; History</span>
+        <span class="pill pill--filled" data-i18n="yof.bonds">Bonds — Family Connection</span>
+        <span class="pill pill--outline" data-i18n="yof.branches">Branches — Future Generations</span>
+      </div>
+
+      <p class="closing-statement" data-animate="fade-up" data-i18n="yof.closing">By automating event logistics and transport directions, Majlis AI removes household planning stress so families across Al Dhafra and the UAE can spend their time sharing meals, honoring traditions, and strengthening intergenerational bonds.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 8. FOOTER ===== -->
+<footer class="site-footer">
+  <div class="section-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-orb brand-orb--small" aria-hidden="true"></span>
+        <p class="footer-title">Majlis AI</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Al Dhafra, Abu Dhabi</p>
+      </div>
+
+      <div class="footer-credits">
+        <p class="footer-credits-title" data-i18n="footer.creditsTitle">Team</p>
+        <ul>
+          <li><span class="credit-name">May Ahmed Mourad</span> — <span data-i18n="footer.role.lead">Team Lead &amp; Developer</span></li>
+          <li><span class="credit-name">Fatema Suhail Al Mazrouei</span> — <span data-i18n="footer.role.prompt">Prompt Designer</span></li>
+          <li><span class="credit-name">Shaden Ahmed Mourad</span> — <span data-i18n="footer.role.knowledge">Knowledge Curator</span></li>
+          <li><span class="credit-name">Lujain Ahmed Mourad</span> — <span data-i18n="footer.role.tester">Tester &amp; Pitch Designer</span></li>
+          <li><span class="credit-name">Ms. May Taha</span> — <span data-i18n="footer.role.mentor">Mentor</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-attribution" data-i18n="footer.attribution">Built for the Sandooq Al Watan Agentic AI Summer Program 2026 · Proudly part of the UAE's Year of Family.</p>
+  </div>
+</footer>
+
+<div class="toast" id="copyToast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
