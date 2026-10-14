@@ -6,17 +6,27 @@ Majlis AI turns a single Arabic or English family request — "we're planning Fr
 
 Built for: the judging panel, mentors, and families who want to understand and try the agent. No login required.
 
+## How the agent works
+
+```
+Google Form  →  Google Sheets  →  Apps Script  →  Gemini API  →  plan logged back to the Sheet
+```
+
+1. **Trigger:** a family member submits a coordination request, in Arabic or English, through a Google Form.
+2. **AI processing:** Google Apps Script sends the request to the Gemini API, which works from the Majlis AI system instruction.
+3. **Output:** the agent produces a bilingual event summary, a task distribution, translated helper notes and a family conversation prompt.
+4. **Storage:** the complete plan is logged automatically to the family Google Sheet.
+
+This repository holds the **showcase website only**. The operational Apps Script project and its configuration are maintained privately and are not part of this repository. Requests submitted through the live form are processed by Gemini and stored in the team's Google Sheet, so don't submit personal details you wouldn't want stored.
+
 ## What's inside
 
 ```
-Majlis-AI-Website/
-├── index.html          # single-page site, all sections
-├── css/
-│   └── styles.css       # palette, layout, animations, RTL rules
-├── js/
-│   └── script.js         # EN/AR translations, language toggle, scroll animations
-├── assets/
-│   └── favicon.svg       # gold/purple "AI" glyph favicon
+MajlisAI/
+├── index.html     # single-page site, all sections
+├── styles.css     # palette, layout, animations, RTL rules
+├── script.js      # EN/AR translations, language toggle, scroll animations
+├── favicon.svg    # gold/purple "AI" glyph favicon
 └── README.md
 ```
 
@@ -62,8 +72,8 @@ If this is changed to restricted access, the embedded form will show an error in
 
 ## Editing content later (non-developer friendly)
 
-- **All English/Arabic copy** lives in one place: the `TRANSLATIONS` object near the top of `js/script.js`. Find the line with the text you want to change (each key has an `en:` and `ar:` value) and edit it directly — no HTML editing required for text changes.
-- **Colors** are CSS variables at the top of `css/styles.css` (`--gold`, `--purple`, `--bg`, etc.) — change them once and they apply everywhere.
+- **All English/Arabic copy** lives in one place: the `TRANSLATIONS` object near the top of `script.js`. Find the line with the text you want to change (each key has an `en:` and `ar:` value) and edit it directly — no HTML editing required for text changes.
+- **Colors** are CSS variables at the top of `styles.css` (`--gold`, `--purple`, `--bg`, etc.) — change them once and they apply everywhere.
 - **Team credits** are in the footer of `index.html` (search for `footer-credits`).
 - **The sample demo input** (EN/AR) is also in `TRANSLATIONS` under `demo.sampleEn`.
 
